@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+ <title> 
+ 
+    TO DO LIST
+ </title>
+ <link rel="stylesheet" href="c.css">
+ <script src="script.js"></script>
+     <body>
+        <div class= "container">
+            <div id="NEWTASK">
+                <input type="text" placeholder="ADD YOUR TASKS" value="Prashant">
+                <button id="push">ADD FROM HERE</button> 
+            </div> 
+            <div id="tasks"></div>
+        </div>
+        <script>
+       document.querySelector('#push').onclick = function(){
+    if(document.querySelector('#NEWTASK input').value.length == 0){
+        alert("Kindly Enter Task Name!!!!")
+    }
+
+    else{
+          document.querySelector('#tasks').innerHTML += `
+            <div class="task">
+                <span id="taskname">
+                    ${document.querySelector('#NEWTASK input').value}
+                </span>
+                <button class="delete">
+                    <i class="far fa-trash-alt"></i>
+                </button>
+            </div>
+        `;
+
+        var current_tasks = document.querySelectorAll(".delete");
+        for(var i=0; i<current_tasks.length; i++){
+            current_tasks[i].onclick = function(){
+                this.parentNode.remove();
+            }
+        }
+    }
+}
+
+        </script>
+  
+     </body> 
+</html>

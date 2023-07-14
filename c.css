@@ -1,0 +1,95 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0; 
+}
+body{
+    height: 100vh;
+    background-color: #e21f53;
+}
+.container{
+    width: 40%;
+    top: 50%;
+    left: 50%;
+    background: white;
+    border-radius: 10px;
+    min-width: 450px; 
+    position: absolute;
+    min-height: 150px;
+    transform: translate(-50%,-50%);
+}
+#NEWTASK{
+    position: relative;
+    padding: 30px 20px;
+}
+#NEWTASK input{
+    width: 75%;
+    height: 45px;
+    padding: 12px;
+    color: #111111;
+    font-weight: 500;
+    position: relative;
+    border-radius: 5px;
+    font-family: 'poppins', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    border: 2px solid #d1d3d4 
+} 
+#NEWTASK input:focus{
+    outline: none;
+    border-color: blue; 
+}
+#NEWTASK button{
+   
+    position: relative;
+    float: right;
+    font-weight: 500;
+    font-size: 16px;
+    background-color: lightblue;
+    border: none;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    width: 20%;
+    height: 45px;
+    border-radius:5px ;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+} 
+#tasks{ 
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+  background-color: azure;
+  padding: 30px 20px;
+  margin-top: 10px;
+}
+.tasks{
+    border-radius: 5px;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px soild #939697;
+    cursor: pointer;
+    background-color: #c5e1e6;
+    height: 50px;
+    margin-bottom: 8px;
+    padding: 5px 10px;
+    display: flex; 
+}
+.tasks span{
+
+     font-family: 'poppins',sans-serif;
+     font-size: 15px;
+     font-weight: 400; 
+}
+.tasks button {
+    background-color:  rgb(0, 191, 255);
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+}
